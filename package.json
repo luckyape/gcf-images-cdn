@@ -1,0 +1,23 @@
+{
+    "name": "imager",
+    "version": "1.0.0",
+    "description": "Google Cloud function for resizing images",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "start": "npx functions-framework --target=imagesCDN [--signature-type=http]",
+        "dev": "nodemon --watch index.js --exec \"npm start\""
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@google-cloud/storage": "^7.0.1",
+        "sharp": "^0.32.5"
+    },
+    "devDependencies": {
+        "@google-cloud/functions-framework": "^3.3.0",
+        "@jest/globals": "^29.7.0",
+        "jest": "^29.7.0",
+        "nodemon": "^3.0.1"
+    }
+}
